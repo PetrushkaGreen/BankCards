@@ -1,0 +1,103 @@
+gui:
+  bank: #Меню, открывающееся при нажатии по 2 предмету в меню карты
+    title: "&8Банк"
+    withdraw: #настройка предмета описания карты
+      material: GOLD_INGOT
+      custom-model-data: 1
+      title: "&6Снять деньги"
+      lore:
+        - "&fНажмите, чтобы снять деньги"
+      sound: "block.note.bell"
+      sound-pitch: 10 #Высота звука
+      sound-volume: 10 #Громкость
+    deposit: #настройка предмета депозита на карту
+      material: GOLD_INGOT
+      custom-model-data: 1
+      title: "&6Положить деньги"
+      lore:
+        - "&fНажмите, чтобы положить деньги"
+      sound: "block.note.bell"
+      sound-pitch: 10 #Высота звука
+      sound-volume: 10 #Громкость
+    transfer: #настройка предмета для перевода денег игрокам
+      material: GOLD_INGOT
+      custom-model-data: 1
+      title: "&6Перевести деньги"
+      lore:
+        - "&fНажмите, чтобы перевести деньги другим игрокам"
+      sound: "block.note.bell"
+      sound-pitch: 10 #Высота звука
+      sound-volume: 10 #Громкость
+    penalty: #настройка предмета для меню штрафов
+      material: GOLD_INGOT
+      custom-model-data: 1
+      title: "&6Оплата штрафа"
+      lore:
+        - "&fНажмите, чтобы проверить штрафы"
+      sound: "block.note.bell"
+      sound-pitch: 10 #Высота звука
+      sound-volume: 10 #Громкость
+  info: #Меню информации (При нажатии по карте)
+    title: "&8Меню"
+    player-head:
+      title: "&eИнформация"
+      lore:
+        - " &eИмя: &f{PLAYER-NAME}"
+        - " &eБаланс: &f{CARD-BALANCE}"
+        - " &eНомер карты: &f{CARD-NUMBER}"
+        - " &eШтрафы: &f{PENALTY-SIZE}"
+    menu-button:
+      material: PAPER
+      custom-model-data: 1
+      title: "&eФункционал"
+      lore:
+        - "&fНажмите, чтобы взаимодействовать с картой"
+      sound: "block.note.bell"
+      sound-pitch: 10 #Высота звука
+      sound-volume: 10 #Громкость
+  transfer:
+    title: "&8Переводы"
+    back-arrow:
+      material: ARROW
+      custom-model-data: 1
+      title: "&6Назад"
+      lore:
+        - "&8Нажмите"
+    continue-arrow:
+      material: ARROW
+      custom-model-data: 1
+      title: "&6Дальше"
+      lore:
+        - "&8Нажмите"
+    player-head:
+      title: "&f{PLAYER-NAME}"
+      lore:
+        - " &eБаланс: &f{BALANCE}"
+        - " &eНомер карты: &f{CARD-NUMBER}"
+        - " &eШтрафы: &f{PENALTY-SIZE}"
+        - "&7Нажмите для перевода!"
+  penalty:
+    title: "&cШтрафы"
+    back-arrow:
+      material: ARROW
+      custom-model-data: 1
+      title: "&6Назад"
+      lore:
+        - "&8Нажмите"
+    continue-arrow:
+      material: ARROW
+      custom-model-data: 1
+      title: "&6Дальше"
+      lore:
+        - "&8Нажмите"
+    penalty-item:
+      material: REDSTONE
+      custom-model-data: 1
+      title: "&cШтраф"
+      lore:
+        - " &eСумма: &f{PENALTY-SIZE}"
+        - " &eОсталось времени: {HOURS}:{MINUTES}:{SECONDS}"
+        - " &eПричина: &f{REASON}"
+      sound: "block.anvil.use"
+      sound-pitch: 4 #Высота звука
+      sound-volume: 10 #Громкость

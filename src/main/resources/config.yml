@@ -1,0 +1,48 @@
+items:
+  card-item:
+    title: "&eБанковская карта"
+    material: GOLD_INGOT
+    lore:
+      - " &7Можно использовать для входа в банк"
+      - " &7Номер карты: {CARD-NUMBER}"
+    custom-model-data: 1
+  money:
+    title: "&eМонета"
+    material: DIAMOND
+    lore:
+      - " &fФизическая валюта"
+    custom-model-data: 1
+
+card-settings:
+  number-format: "####-####" #Здесь '#' - буквы латинского алфавита\цифры обозначающие номер карты. '-' - любой символ который всегда будет записываться
+  code-alphabet: "abcdefghijklmnopqrstuvwxyz0123456789" #Какие символы будут включены в номер карты
+  penalty-command: "kill {CARD-OWNER}" #Команда, проигрывающаяся при неуплате штрафа
+
+messages:
+  card-deleted: "&cВаша карта была удалена!"
+  card-created: "&aКарта успешно создана! §r  §r§rНомер: {CARD-NUMBER}"
+  already-has-card: "&cУ вас уже есть своя карта!"
+  about-bank-commands: "&6--------"
+  not-enough-physical-balance: "&cНедостаточно средств в инвентаре!"
+  not-enough-virtual-balance: "&cНедостаточно средств на карте!"
+  no-player-card: "&cИгрок не имеет карты!"
+  deposit: "&aВведите сумму для депозита! &b\"cancel\" &aдля отмены "
+  withdraw: "&aВведите сумму которые хотите снять! &b\"cancel\" &aдля отмены "
+  transfer: "&aВведите сумму которые хотите перевести {TARGET-NAME}! &b\"cancel\" &aдля отмены "
+  wrong-number: "&cВведите число!"
+  wrong-player: "&cИгрок не в сети!"
+  withdraw-successful: "&aВы успешно сняли {WITHDRAW-COUNT}!"
+  deposit-successful: "&aВы успешно положили {DEPOSIT-COUNT}!"
+  transfer-successful-sender: "&aВы успешно перевели {TRANSFER-COUNT} на счёт {TARGET-NAME}!"
+  transfer-successful-recipient: "&a{SENDER-NAME} Перевёл вам {TRANSFER-COUNT}!"
+  send-penalty: "&cВы отправили штраф!"
+  get-penalty: "&cВы получили штраф! Посмотрите инфо в карточке!"
+  penalty-paid: "&aВы оплатили штраф!"
+  penalty-not-paid: "&cВы были убиты за неуплату штрафа!"
+
+commands:
+  create-description: "&b/bank create &f- &eСоздать свою карточку"
+  reload-description: "&b/bank reload &f- &eПерезагрузка плагина"
+  getmoney-description: "&b/bank getmoney <Количество> &f- &eПолучить физическую фалюту"
+  getmoney-usage: "&b/bank getmoney <Количество>"
+  penalty-usage: "&e/penalty <ник игрока> <сумма> <кол-во минут> <причина>"

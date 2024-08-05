@@ -1,0 +1,27 @@
+name: BankCards
+version: '${version}'
+main: gg.petrushka.bankcards.BankCards
+api-version: '1.20'
+author: Petrushka__228
+
+permissions:
+  bankcards.*:
+    description: "Все права плагина"
+  bankcards.bank:
+    description: "Вход в /bank"
+  bankcards.bank.create:
+    description: "Создать свою банковскую карту"
+  bankcards.bank.reload:
+    description: "Перезагрузка плагина"
+  bankcards.bank.getmoney:
+    description: "Получение физ. валюты"
+  bankcards.penalty:
+    description: "Назначение штрафов"
+
+commands:
+  bank:
+    permission: bankcards.bank
+    permission-message: [§cУ вас нет прав на эту команду!]
+  penalty:
+    permission: bankcards.penalty
+    permission-message: [§cУ вас нет прав на эту команду!]
